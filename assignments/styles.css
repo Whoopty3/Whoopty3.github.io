@@ -7,6 +7,9 @@ body {
  /* Tables */
  /* Typography */
  h1 {color: 
-    
-    magenta
+     magenta;
+     font-style: italic;
+}
+h2 { 
+    color: green;
 }
