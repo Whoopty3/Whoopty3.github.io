@@ -24,11 +24,8 @@ img {
     
  /* Tables */
 table {
-    border-collapse: collapse;
-}
-
-th,
- td { 
+    border-collapse: collapse;}
+th,td { 
     border: 1px solid 113388;
     padding: 4px;
     }
@@ -45,4 +42,24 @@ td {
 }
 h2 { 
     color: #F2A2C8;
+}
+@media only screen and (min-width: 600px) {
+.assignment-wrapper ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin:0;
+    align-items: center;
+}}
+.assignment-wrapper ul{
+    flex-direction: row;
+    list-style-type: none;
+    padding: 0;
+    margin:0;
+}
+.assignment-wrapper li {
+    margin: 0 10px;
+} 
+.assignment-wrapper li a { 
+    display: block;
 }
