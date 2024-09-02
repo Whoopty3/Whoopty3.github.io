@@ -51,9 +51,10 @@ body {
     margin: 8px;
 }
 .item {
-    text-align: center;
-    margin: 8px;
-
+    margin: 5px;
+}
+.item p {
+    text-align: end;
 }
 .column {
     background-color: lightblue;
@@ -126,13 +127,15 @@ body {
     .sidebar ul {
         list-style-type: none;
         padding-left: 0;
+        
     }
     .sidebar li { 
         margin: 5px 0;
     }
     .sidebar a { 
         text-decoration: none;
-        padding:3px;
+        background: #6b4ea5;
+        padding:5px;
         display:block;
         text-align: center;
         border-radius:5px;
