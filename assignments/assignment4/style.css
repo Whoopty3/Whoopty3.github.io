@@ -1,383 +1,314 @@
-/* General Body Structure */
+/* Structure */
 body {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
   max-width: 100%;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #f5f5f5;
 }
 
-h1, h2 {
-  margin: 0;
+/* User Navigation */
+#user-nav {
+  padding: 1px;
 }
 
-/* Navbar Styling */
+/* Main Header */
 #main-header {
   background-color: black;
-  position: relative;
-  z-index: 100;
 }
 
+/* Logo Search Input */
+#logo-search input {
+  height: 30px;
+  width: 189px;
+  background-color: black;
+  border: 1px solid white;
+}
+
+/* Inline Elements */
+.inline {
+  display: inline-block;
+  padding: 10px;
+  background-color: #73000A; /* Dark Red */
+}
+
+/* Links */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#link-holder a, #user-nav a, .horizontal-nav a {
+  color: white; /* Set link color to white */
+  text-decoration: none; /* Remove underlines */
+}
+
+a:hover {
+  color: #73000A; /* Dark Red for hover effect */
+  text-decoration: underline; /* Optional: add underline on hover */
+}
+
+/* Main Navigation */
 #main-nav {
-  background-color: #73000A;
-  padding: 10px 0;
   text-align: center;
+  background-color: #73000A; /* Dark Red */
+  padding: 1px;
+  width: 100%; /* Make the navbar full width */
+  font-weight: bold; /* Make the text bold */
 }
 
+/* Main Navigation List */
 #main-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-around;
+  width: 90%; /* Increase width to make the navbar wider */
+  margin-right: auto;
+  margin-left: auto;
 }
 
 #main-nav li {
-  margin: 0 15px;
+  margin: 0 2px;
 }
 
+/* Horizontal Navigation */
+.horizontal-nav ul {
+  padding-left: 0px;
+}
+
+.horizontal-nav li {
+  list-style-type: none;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+/* Link Styling within Nav */
 #main-nav a {
   color: white;
   text-decoration: none;
-  font-weight: bold;
-  padding: 10px 15px;
+  font-weight: bold; /* Ensure links in the navbar are bold */
 }
 
 #main-nav a:hover {
-  color: #ffffffb3;
-  background-color: #570008;
-  border-radius: 5px;
+  color: #F0F0F0; /* Light grey hover effect for navbar links */
+  text-decoration: underline; /* Optional: underline on hover */
 }
 
-/* Hero Section */
-#hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  background-color: #ececec;
-  padding: 20px;
+/* Button Hover Effects */
+#new-understanding button:hover, #overcoming-barriers button:hover, 
+#investing-in-research button:hover, #office-vp button:hover {
+  background-color: white;
+  color: #73000A; /* Dark Red */
+  border: 2px solid #73000A;
 }
 
-.hero-text h1 {
-  color: #73000A;
-  font-size: 3em;
-  margin-bottom: 10px;
+/* Sections Background */
+#remarkable-research {
+  background-color: #73000A; /* Dark Red */
 }
 
-.hero-text p {
-  font-size: 1.2em;
-  color: #555;
-  margin: 20px 0;
-}
-
-.hero-image img {
-  width: 100%;
-  height: auto;
-  max-width: 1000px;
-  margin-top: 20px;
+#overcoming-barriers {
+  background: black;
 }
 
 /* Button Styling */
-button {
-  background-color: #73000A;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  font-size: 1.2em;
-  cursor: pointer;
-  transition: all 0.3s ease;
+#overcoming-barriers button {
+  background-color: #73000A; /* Dark Red */
+  border: 2px solid white;
+  padding: 10px;
+  width: fit-content;
 }
 
-button:hover {
-  background-color: white;
-  color: #73000A;
-  border: 2px solid #73000A;
-  padding: 10px 18px;
+#new-understanding, #investing-in-research, #office-vp {
+  background-color: #ECECEC; /* Light Grey */
 }
 
-/* Section Layouts */
-.flex-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 40px 20px;
-  background-color: #ffffff;
-}
-
-.flex-container:nth-child(even) {
-  background-color: #f8f8f8;
-}
-
-.flex-text {
-  flex: 1;
+#new-understanding button, #investing-in-research button, #office-vp button {
+  background-color: #73000A; /* Dark Red */
   padding: 20px;
-  text-align: center;
+  width: fit-content;
 }
 
-.flex-text h2 {
-  color: #73000A;
-  font-size: 2.5em;
-  margin-bottom: 10px;
-}
-
-.flex-text p {
-  color: #555;
-  font-size: 1.1em;
-  line-height: 1.6em;
-}
-
-.flex-container img {
-  flex: 1;
-  max-width: 100%;
-  height: auto;
-}
-
-/* Explore Programs Section */
-#explore-programs {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 60px 10%;
-}
-
-#explore-programs img {
-  max-width: 45%;
-  height: auto;
-  margin-right: 10px;
-}
-
-#explore-programs .flex-text {
-  max-width: 45%;
-  text-align: left;
-}
-
-#explore-programs h2 {
-  font-size: 2.8em;
-  color: #73000A;
-  margin-bottom: 20px;
-}
-
-/* Application Process Section */
-#application-process {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 60px 10%;
-  background-color: #f0f0f0;
-}
-
-#application-process img {
-  max-width: 45%;
-  height: auto;
-  margin-left: 10px;
-}
-
-#application-process .flex-text {
-  max-width: 45%;
-  text-align: left;
-}
-
-#application-process h2 {
-  font-size: 2.8em;
-  color: #73000A;
-  margin-bottom: 20px;
-}
-
-/* Financial Support Section */
-#financial-support {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 60px 10%;
-}
-
-#financial-support img {
-  max-width: 45%;
-  height: auto;
-  margin-right: 10px;
-}
-
-#financial-support .flex-text {
-  max-width: 45%;
-  text-align: left;
-}
-
-#financial-support h2 {
-  font-size: 2.8em;
-  color: #73000A;
-  margin-bottom: 20px;
-}
-
-/* Student Life Section */
-#student-life {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 60px 10%;
-  background-color: #f0f0f0;
-}
-
-#student-life img {
-  max-width: 45%;
-  height: auto;
-  margin-left: 10px;
-}
-
-#student-life .flex-text {
-  max-width: 45%;
-  text-align: left;
-}
-
-#student-life h2 {
-  font-size: 2.8em;
-  color: #73000A;
-  margin-bottom: 20px;
-}
-
-/* Footer Styling */
-#main-footer {
-  background-color: #73000A;
-  padding: 20px;
-  text-align: center;
-  color: white;
-}
-
-.footer-links ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.footer-links a {
-  color: white;
-  text-decoration: none;
-}
-
-.footer-links a:hover {
-  text-decoration: underline;
-}
-
-.footer-social ul {
-  display: flex;
+/* Content Alignment */
+.column2 {
+  padding: 15px;
   justify-content: center;
-  list-style-type: none;
-  padding: 0;
+  margin-left: 3%;
 }
 
-.footer-social li {
+#new-understanding img {
+  margin-left: 10%;
+  margin-bottom: 1%;
+  margin-top: 1%;
+  margin-right: 1%;
+}
+
+#column3 {
+  margin-left: 2%;
+  margin-right: 10%;
+  justify-content: center;
+}
+
+/* Image Styling */
+#remarkable-research img, #overcoming-barriers img, #new-understanding img, 
+#breakthrough img, #leading-edge img, #office-vp img {
+  max-width: 100%;
+}
+
+/* Section Specific Styles */
+#research-spots {
+  background-color: #FFFFFF; /* White */
+}
+
+.col1of4:hover {
+  background-color: #F0F0F0; /* Light Grey Hover */
+}
+
+#research-spots .flex-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+}
+
+#more-research-stories {
+  position: absolute;
+  right: 5%;
+}
+
+#breakthrough {
+  background: #570008; /* Dark Burgundy */
+  margin-top: 75px;
+}
+
+/* Button Styles for Specific Sections */
+#breakthrough button, #better-world button {
+  background: black;
+  padding: 20px;
+  width: fit-content;
+  border: 3px solid white;
+}
+
+#breakthrough button:hover, #better-world button:hover {
+  background-color: white;
+  color: #73000A; /* Dark Red */
+}
+
+/* Text and Layout */
+#better-world {
+  background-image: url('https://place-hold.it/800x500/cec8c8');
+  width: 100%;
+  height: 700px;
+}
+
+#text {
+  background-color: #73000A; /* Dark Red */
+  position: relative;
+  top: 1%;
   margin: 0 10px;
 }
 
-.footer-social img {
-  width: 35px;
-  height: 35px;
+#better-world h1, #better-world p, #better-world button {
+  position: relative;
+  top: 25%;
+  left: 2px;
+  padding-right: 2px;
+  padding-left: 2px;
 }
 
-/* Bottom Bar */
+/* Footer */
+#main-footer {
+  background: #73000A; /* Dark Red */
+}
+
 #bottom-bar {
-  background-color: black;
-  padding: 10px;
+  background: black;
 }
 
 #bottom-bar p {
+  padding: 1px;
+  position: relative;
+  left: 10%;
   color: white;
-  font-size: 12px;
-  margin: 0;
+  font-size: 10px;
 }
 
 /* Typography */
+h1 {
+  font-family: serif;
+  font-size: 2.7em;
+}
+
+p, button {
+  font-size: 1.1em;
+}
+
 .bold {
   font-weight: bold;
 }
 
-#main-header a,
-button,
-.main-nav a {
-  font-family: 'Arial', sans-serif;
-  font-weight: bold;
+#new-understanding h1, .col1of4 h3, #research-spots h1, 
+#investing-in-research h1, #office-vp h1 {
+  color: #73000A; /* Dark Red */
 }
 
-#main-nav a,
-button {
-  text-transform: uppercase;
-  letter-spacing: 1px;
+#research-spots h1 {
+  font-family: serif;
+  font-size: 2.7em;
+  text-align: center;
 }
 
-#main-footer,
-#bottom-bar {
-  font-size: 0.9em;
+#overcoming-barriers button {
+  font-size: 1.4em;
+  color: white;
 }
 
-/* Responsive Styling */
-@media (min-width: 768px) {
-  /* Main Nav */
-  #main-nav ul {
-    justify-content: space-around;
-  }
-
-  /* Hero Section */
-  #hero {
-    flex-direction: row;
-    padding: 60px;
-  }
-
-  .hero-text {
-    flex: 1;
-    text-align: left;
-    padding-right: 40px;
-  }
-
-  .hero-image img {
-    flex: 1;
-    width: 100%;
-  }
-
-  /* Section Layouts */
-  .flex-container {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 80px 10%;
-  }
-
-  .flex-text {
-    max-width: 45%;
-    text-align: left;
-    padding-right: 20px;
-  }
-
-  .flex-container img {
-    max-width: 50%;
-    margin: 0;
-  }
-
-  /* Footer */
-  .footer-links ul {
+/* Media Queries for Larger Screens */
+@media only screen and (min-width:768px) {
+  .horizontal-nav ul, .flex-container {
     display: flex;
-    justify-content: center;
-    padding: 20px;
   }
 
-  .footer-links li {
-    margin-right: 30px;
+  #user-nav ul {
+    position: relative;
+    top: 0%;
+    left: 45%;
   }
 
-  #bottom-bar {
-    text-align: center;
-    padding: 20px;
-  }
-}
-
-/* Tablet and Large Screens */
-@media (min-width: 1024px) {
-  #explore-programs,
-  #application-process,
-  #financial-support,
-  #student-life {
-    flex-direction: row-reverse;
+  #main-nav li {
+    flex: 1;
   }
 
-  .flex-text {
-    padding-left: 30px;
+  #logo-search {
+    padding: 5px;
+    justify-content: space-between;
+    margin: 10px 10%;
+  }
+
+  #landing h1 {
+    margin-top: -40px;
+    margin-left: 10%;
+    font-size: 3em;
+  }
+
+  #landing p {
+    margin-left: 30%;
+    margin-right: 30%;
+    font-size: 1.1em;
+  }
+
+  #remarkable-research img {
+    flex: 6;
+    height: 600px;
+  }
+
+  .col1of4 {
+    margin: 20px;
+  }
+
+  #text {
+    max-width: 40%;
+    height: 40%;
+    position: relative;
+    top: 35%;
+    left: 5%;
+  }
+
+  #logo-links {
+    position: absolute;
+    right: 5%;
   }
 }
