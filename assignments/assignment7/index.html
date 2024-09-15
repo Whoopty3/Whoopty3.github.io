@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignment 7</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Assignment 7</h1>
+    <h2>Introduction to JavaScript</h2>
+
+    <div class="container">
+        <!-- Count Section -->
+        <div class="count-box" onclick="increaseCount()">
+            <h3>Count</h3>
+            <p id="count">0</p>
+        </div>
+
+        <!-- Random Image Section -->
+        <div class="random-image-box">
+            <h3>Random Image</h3>
+            <img id="randomImage" src="https://picsum.photos/200" alt="Random Image" onclick="refreshImage()">
+        </div>
+
+        <!-- Slider Section -->
+        <div class="slider-box">
+            <h3>Slider Move</h3>
+            <input type="range" min="0" max="100" value="0" id="slider" oninput="moveSquare()">
+            <div id="square"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>@yourwebsite.com</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

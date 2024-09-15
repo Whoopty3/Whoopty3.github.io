@@ -80,3 +80,7 @@ h2 {
 .projects-wrapper {
     margin-top: 40px; /* Add space between Assignments and Projects */
 }
+.img {
+    display:flex;
+    padding:none;
+    }
