@@ -1,7 +1,16 @@
-/* Structure */ 
+/* Structure */
 body { 
     background: #0460D9;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+#content-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 /* Navigation */
@@ -9,78 +18,145 @@ a {
     text-decoration: none;
     background: #F2A2C8;
     color: black;
-    padding: 4px;
-    border-radius: 3px;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
 }
 a:hover { 
     background: #223038;
+    color: white;
 }
+
+/* Headings */
+h1 { 
+    color: #44A1F2;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+h2 { 
+    color: #F2A2C8;
+    font-size: 2em;
+    margin: 30px 0 20px;
+}
+
+/* Typography */
+p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: white;
+}
+
 /* Images */
 img {
     border: 5px solid #121B26;
     border-radius: 5px;
-}
-    
-/* Tables */
-table {
-    border-collapse: collapse;
-}
-th, td { 
-    border: 1px solid 113388;
-    padding: 4px;
-}
-th { 
-    background: #F25270;
-}
-td { 
-    background: #F2F2F2;
+    width: 100%; /* Make images responsive */
+    max-width: 250px; /* Limit the max size of images */
 }
 
-/* Typography */
-h1 { 
-    color: #44A1F2;
-    font-style: italic;
-}
-h2 { 
-    color: #F2A2C8;
-}
-
-/* Flexbox for larger screens */
-@media only screen and (min-width: 600px) {
-    .assignment-wrapper ul,
-    .projects-wrapper ul {
-        display: flex;
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-        align-items: center;
-        flex-direction: row; /* This ensures horizontal layout inside the ul */
-    }
-}
-
+/* Flexbox Layout for Assignments and Projects */
 .assignment-wrapper ul, 
 .projects-wrapper ul {
-    flex-direction: row;
-    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
     padding: 0;
+    list-style-type: none;
     margin: 0;
 }
 
 .assignment-wrapper li, 
 .projects-wrapper li {
-    margin: 0 10px;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    padding: 15px;
+    max-width: 250px; /* Limit the width of each assignment/project box */
+    text-align: center; /* Center-aligns the text inside the box */
+    transition: transform 0.3s ease;
+}
+
+.assignment-wrapper li:hover, 
+.projects-wrapper li:hover {
+    transform: translateY(-10px); /* Add a slight hover effect */
+}
+
+.assignment-wrapper li img, 
+.projects-wrapper li img {
+    margin-bottom: 10px;
 }
 
 .assignment-wrapper li a, 
 .projects-wrapper li a { 
     display: block;
+    margin-top: 10px;
+    text-align: center; /* Center-aligns the assignment/project title */
+    width: 100%; /* Make links cover the full width */
+    padding: 10px;
+    background: #F2A2C8;
+    color: black;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
-/* Projects Wrapper */
-.projects-wrapper {
-    margin-top: 40px; /* Add space between Assignments and Projects */
+.assignment-wrapper li a:hover, 
+.projects-wrapper li a:hover {
+    background-color: #223038;
+    color: white;
 }
-.img {
-    display:flex;
-    padding:none;
+
+/* Flexbox for larger screens */
+@media (min-width: 600px) {
+    .assignment-wrapper ul,
+    .projects-wrapper ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
+}
+
+.projects-wrapper {
+    margin-top: 50px;
+}
+
+/* Tables */
+table {
+    border-collapse: collapse;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 800px;
+}
+
+th, td { 
+    border: 1px solid #113388;
+    padding: 10px;
+    text-align: center;
+}
+
+th { 
+    background: #F25270;
+    color: white;
+}
+
+td { 
+    background: #F2F2F2;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .assignment-wrapper ul, 
+    .projects-wrapper ul {
+        flex-direction: column;
+    }
+
+    .assignment-wrapper li, 
+    .projects-wrapper li {
+        width: 100%; /* Take up full width on smaller screens */
+    }
+
+    img {
+        width: 100%;
+        max-width: 200px;
+    }
+}
