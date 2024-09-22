@@ -1,0 +1,115 @@
+/* Basic Page Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8; /* Light background */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Ensures content is centered vertically */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Center all content */
+header, nav, .exercise-container, footer {
+    text-align: center;
+    width: 100%;
+}
+
+/* Header Section */
+header h1 {
+    font-size: 2.5em;
+    color: #5d6d7e; /* Title color */
+}
+
+header h2 {
+    font-size: 1.8em;
+    color: #cb4335; /* Subtitle color */
+}
+
+/* Navigation Menu */
+#menu {
+    margin: 20px 0;
+    position: relative;
+}
+
+#menuToggle {
+    font-size: 1.5em;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+#menuItems {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: none;
+}
+
+#menuItems li {
+    margin: 5px 0;
+}
+
+#menuItems a {
+    text-decoration: none;
+    color: #3498db; /* Link color */
+    font-size: 1.2em;
+}
+
+#menuItems a:hover {
+    color: #1abc9c;
+}
+
+/* Exercise Container */
+.exercise-container {
+    background-color: #eaecee; /* Light grey background */
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+}
+
+/* Slider Input */
+input[type="range"] {
+    width: 100%;
+    margin: 10px 0;
+    background-color: #3498db;
+}
+
+/* Picture Chooser Buttons */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.button-group button {
+    padding: 10px;
+    background-color: #5d6d7e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-group button:hover {
+    background-color: #34495e;
+}
+
+/* Picture Chooser */
+#pictureContainer img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    font-size: 0.8em;
+    color: #7f8c8d;
+}
