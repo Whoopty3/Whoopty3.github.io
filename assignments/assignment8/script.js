@@ -1,3 +1,4 @@
+//Payne Whitlock
 // Toggle Menu
 const menuToggle = document.getElementById("menuToggle");
 const menuItems = document.getElementById("menuItems");
