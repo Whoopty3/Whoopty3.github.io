@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<head>
+    <title>Basketball Junkie</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script> <!-- JavaScript to toggle sections -->
+</head>
+<body>
+
+    <!-- Header with Navigation -->
+    <header>
+        <div class="logo">
+            <img src="images/Home-photos.jpg">
+            <h1>Basketball Junkie</h1>
+        </div>
+        <nav>
+            <ul id="nav-links">
+                <li><a href="#" onclick="showSection('home')">Home</a></li>
+                <li><a href="#" onclick="showSection('player-profiles')">Player Profiles</a></li>
+                <li><a href="#" onclick="showSection('teams')">Teams</a></li>
+                <li><a href="#" onclick="showSection('analysis')">Analysis</a></li>
+                <li><a href="#" onclick="showSection('contact')">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content wrapper -->
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="layered-section">
+            <div class="section-image">
+                <img src="images/Home-photos.jpg">
+            </div>
+            <div class="section-content">
+                <h2>Welcome to Basketball Junkie</h2>
+                <p>Your go-to source for detailed basketball statistics, player profiles, and team insights.</p>
+                <div class="btn-wrapper">
+                    <a href="#" onclick="showSection('analysis')" class="btn">Discover More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Player Profiles Section -->
+        <section id="player-profiles" class="layered-section" style="display: none;">
+            <div class="section-content">
+                <h2>Player Profiles</h2>
+                <p>Explore detailed performance data for basketball’s top athletes. Each profile offers insights into key stats:</p>
+                <ul>
+                    <li><strong>Points Per Game:</strong> Average points scored per game.</li>
+                    <li><strong>Shooting Accuracy:</strong> Breakdown of field goals, 3-pointers, and free throws.</li>
+                    <li><strong>Defensive Stats:</strong> Blocks, steals, and overall defensive performance.</li>
+                    <li><strong>Advanced Metrics:</strong> Player efficiency rating, plus/minus, and more.</li>
+                </ul>
+            </div>
+            <div class="section-image">
+                <img src="images/Player-profiles-.jpg">
+            </div>
+        </section>
+
+        <!-- Teams Section -->
+        <section id="teams" class="layered-section" style="display: none;">
+            <div class="section-image">
+                <img src="images/Teams-photos.jpg">
+            </div>
+            <div class="section-content">
+                <h2>Teams</h2>
+                <p>Break down the dynamics and performance of your favorite teams:</p>
+                <ul>
+                    <li><strong>Team Statistics:</strong> Points per game, rebounds, assists, and overall team efficiency.</li>
+                    <li><strong>Roster Analysis:</strong> In-depth player roles and impact on team performance.</li>
+                    <li><strong>Team Comparisons:</strong> Compare different teams across metrics like shooting accuracy, defensive strength, and more.</li>
+                    <li><strong>Historical Data:</strong> Access team performance across seasons and track progress or decline over time.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Stats and Analysis Section -->
+        <section id="analysis" class="layered-section" style="display: none;">
+            <div class="section-content">
+                <h2>Deep Analysis</h2>
+                <p>Go beyond basic stats with advanced basketball analytics, including:</p>
+                <ul>
+                    <li><strong>Advanced Shooting Analytics:</strong> Shot charts, heatmaps, and shooting zones.</li>
+                    <li><strong>Player Trends:</strong> Track player development over time and game-to-game performance changes.</li>
+                    <li><strong>Team Strategies:</strong> Analyze how team strategies impact individual player performance.</li>
+                    <li><strong>Historical Milestones:</strong> Examine player accomplishments and historical context of their careers.</li>
+                </ul>
+            </div>
+            <div class="section-image">
+                <img src="images/Stats-photo.jpg" alt="Analysis graph image">
+            </div>
+        </section>
+
+        <!-- Contact Us Section -->
+        <section id="contact" class="layered-section" style="display: none;">
+            <div class="section-image">
+                <img src="images/Contact Us-.jpg">
+            </div>
+            <div class="section-content">
+                <h2>Contact Us</h2>
+                <p>Have questions or want to know more? Get in touch with us:</p>
+                <ul>
+                    <li><strong>Email:</strong> info@basketballjunkie.com</li>
+                    <li><strong>Phone:</strong> +1 8036342637</li>
+                    <li><strong>Social Media:</strong> Follow us on Twitter, Facebook, and Instagram @BasketballJunkie</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Basketball Junkie</p>
+    </footer>
+
+</body>
+</html>
