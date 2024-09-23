@@ -148,6 +148,15 @@ footer {
 }
 
 /* Responsive Design */
+
+/* Resize images on larger screens (desktop/larger resolutions) */
+@media (min-width: 1024px) {
+    .section-image img {
+        width: 15%;  /* Reduce the width of images to 15% of their original size */
+        max-width: 200px; /* Add a maximum width cap to control how big they get */
+    }
+}
+
 @media (max-width: 768px) {
     .layered-section {
         flex-direction: column;
