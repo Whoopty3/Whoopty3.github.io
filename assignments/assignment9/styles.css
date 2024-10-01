@@ -10,14 +10,14 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f0f0f0;
+    background-color: #e0e0e0; /* Light grey background */
   }
   
   .container {
     text-align: center;
     background-color: #ffffff;
     padding: 20px;
-    border: 2px solid #ccc;
+    border: 2px solid #999; /* Grey border */
   }
   
   .input-section {
@@ -25,10 +25,10 @@
   }
   
   .canvas-container {
-    background-color: #000000;
+    background-color: #4b0082; /* Dark purple background */
     width: 400px;
     height: 400px;
-    border: 2px solid #333;
+    border: 2px solid #333; /* Dark grey border */
     position: relative;
   }
   
@@ -39,14 +39,14 @@
   footer {
     margin-top: 20px;
     font-size: 0.9em;
-    color: #777;
+    color: #666; /* Medium grey text */
   }
   
   .star {
     position: absolute;
     width: 10px;
     height: 10px;
-    background-color: yellow;
+    background-color: #ffcc00; /* Yellow stars */
     border-radius: 50%;
   }
   
