@@ -1,0 +1,227 @@
+[
+    {
+        "_id": 1,
+        "name": "LeBron James",
+        "ppg": 27.1,
+        "apg": 7.4,
+        "rpg": 7.5,
+        "fg_percentage": "50.4%",
+        "three_point_percentage": "34.6%"
+    },
+    {
+        "_id": 2,
+        "name": "Stephen Curry",
+        "ppg": 24.2,
+        "apg": 6.5,
+        "rpg": 4.6,
+        "fg_percentage": "47.5%",
+        "three_point_percentage": "43.3%"
+    },
+    {
+        "_id": 3,
+        "name": "Kevin Durant",
+        "ppg": 27.0,
+        "apg": 4.9,
+        "rpg": 7.1,
+        "fg_percentage": "52.4%",
+        "three_point_percentage": "38.0%"
+    },
+    {
+        "_id": 4,
+        "name": "Giannis Antetokounmpo",
+        "ppg": 29.5,
+        "apg": 5.9,
+        "rpg": 11.4,
+        "fg_percentage": "55.3%",
+        "three_point_percentage": "30.3%"
+    },
+    {
+        "_id": 5,
+        "name": "James Harden",
+        "ppg": 24.8,
+        "apg": 10.9,
+        "rpg": 5.6,
+        "fg_percentage": "44.1%",
+        "three_point_percentage": "36.2%"
+    },
+    {
+        "_id": 6,
+        "name": "Luka Dončić",
+        "ppg": 28.4,
+        "apg": 8.9,
+        "rpg": 9.1,
+        "fg_percentage": "47.2%",
+        "three_point_percentage": "35.0%"
+    },
+    {
+        "_id": 7,
+        "name": "Kawhi Leonard",
+        "ppg": 25.9,
+        "apg": 4.9,
+        "rpg": 6.5,
+        "fg_percentage": "49.3%",
+        "three_point_percentage": "38.4%"
+    },
+    {
+        "_id": 8,
+        "name": "Anthony Davis",
+        "ppg": 23.2,
+        "apg": 3.1,
+        "rpg": 9.9,
+        "fg_percentage": "51.5%",
+        "three_point_percentage": "30.0%"
+    },
+    {
+        "_id": 9,
+        "name": "Joel Embiid",
+        "ppg": 30.6,
+        "apg": 4.2,
+        "rpg": 11.7,
+        "fg_percentage": "50.2%",
+        "three_point_percentage": "37.1%"
+    },
+    {
+        "_id": 10,
+        "name": "Jayson Tatum",
+        "ppg": 26.4,
+        "apg": 4.3,
+        "rpg": 7.4,
+        "fg_percentage": "45.9%",
+        "three_point_percentage": "38.6%"
+    },
+    {
+        "_id": 11,
+        "name": "Damian Lillard",
+        "ppg": 28.8,
+        "apg": 7.5,
+        "rpg": 4.2,
+        "fg_percentage": "44.3%",
+        "three_point_percentage": "37.9%"
+    },
+    {
+        "_id": 12,
+        "name": "Jimmy Butler",
+        "ppg": 21.5,
+        "apg": 5.3,
+        "rpg": 6.9,
+        "fg_percentage": "48.0%",
+        "three_point_percentage": "24.5%"
+    },
+    {
+        "_id": 13,
+        "name": "Bradley Beal",
+        "ppg": 23.2,
+        "apg": 6.6,
+        "rpg": 5.2,
+        "fg_percentage": "46.3%",
+        "three_point_percentage": "34.9%"
+    },
+    {
+        "_id": 14,
+        "name": "Kyrie Irving",
+        "ppg": 27.4,
+        "apg": 5.9,
+        "rpg": 4.9,
+        "fg_percentage": "50.6%",
+        "three_point_percentage": "39.1%"
+    },
+    {
+        "_id": 15,
+        "name": "Paul George",
+        "ppg": 23.3,
+        "apg": 5.2,
+        "rpg": 6.6,
+        "fg_percentage": "45.4%",
+        "three_point_percentage": "40.1%"
+    },
+    {
+        "_id": 16,
+        "name": "Devin Booker",
+        "ppg": 25.6,
+        "apg": 4.3,
+        "rpg": 4.1,
+        "fg_percentage": "46.7%",
+        "three_point_percentage": "35.3%"
+    },
+    {
+        "_id": 17,
+        "name": "Trae Young",
+        "ppg": 25.5,
+        "apg": 9.4,
+        "rpg": 3.9,
+        "fg_percentage": "44.3%",
+        "three_point_percentage": "34.0%"
+    },
+    {
+        "_id": 18,
+        "name": "Donovan Mitchell",
+        "ppg": 26.4,
+        "apg": 4.3,
+        "rpg": 5.1,
+        "fg_percentage": "47.3%",
+        "three_point_percentage": "36.9%"
+    },
+    {
+        "_id": 19,
+        "name": "Chris Paul",
+        "ppg": 14.7,
+        "apg": 10.1,
+        "rpg": 4.4,
+        "fg_percentage": "49.3%",
+        "three_point_percentage": "35.2%"
+    },
+    {
+        "_id": 20,
+        "name": "Russell Westbrook",
+        "ppg": 18.5,
+        "apg": 7.1,
+        "rpg": 7.4,
+        "fg_percentage": "44.0%",
+        "three_point_percentage": "29.3%"
+    },
+    {
+        "_id": 21,
+        "name": "Zion Williamson",
+        "ppg": 27.0,
+        "apg": 3.7,
+        "rpg": 7.2,
+        "fg_percentage": "61.1%",
+        "three_point_percentage": "31.5%"
+    },
+    {
+        "_id": 22,
+        "name": "Julius Randle",
+        "ppg": 20.1,
+        "apg": 5.9,
+        "rpg": 10.2,
+        "fg_percentage": "41.3%",
+        "three_point_percentage": "30.0%"
+    },
+    {
+        "_id": 23,
+        "name": "De'Aaron Fox",
+        "ppg": 23.2,
+        "apg": 7.2,
+        "rpg": 3.7,
+        "fg_percentage": "47.7%",
+        "three_point_percentage": "32.2%"
+    },
+    {
+        "_id": 24,
+        "name": "Ja Morant",
+        "ppg": 24.5,
+        "apg": 7.0,
+        "rpg": 5.6,
+        "fg_percentage": "49.3%",
+        "three_point_percentage": "33.9%"
+    },
+    {
+        "_id": 25,
+        "name": "Nikola Jokić",
+        "ppg": 26.4,
+        "apg": 8.1,
+        "rpg": 10.8,
+        "fg_percentage": "56.6%",
+        "three_point_percentage": "38.8%"
+    }
+]
