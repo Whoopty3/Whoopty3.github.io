@@ -1,3 +1,4 @@
+// Function to show the selected section and hide the others
 function showSection(sectionId) {
     // Hide all sections
     const sections = document.querySelectorAll('section');
@@ -10,7 +11,7 @@ function showSection(sectionId) {
 
     // If Player Profiles section is selected, load player data
     if (sectionId === 'player-profiles') {
-        loadPlayerProfiles();
+        showPlayers(); // Correct function name
     }
 }
 
@@ -24,12 +25,16 @@ function toggleMenu() {
     const navLinks = document.getElementById('nav-links');
     navLinks.style.display = navLinks.style.display === 'block' ? 'none' : 'block';
 }
+
 // Fetch player profiles from the data.json file
 const getPlayers = async () => {
-    const url = 'data.json'; // Assuming the file is in the same directory
+    const url = 'https://raw.githubusercontent.com/Whoopty3/Whoopty3.github.io/main/projects/part6/data.json'; // Make sure this is the correct path
 
     try {
         const response = await fetch(url);
+        if (!response.ok) {
+            throw new Error('Failed to fetch player data');
+        }
         return response.json();
     } catch (error) {
         console.error('Error fetching player data:', error);
@@ -40,10 +45,22 @@ const getPlayers = async () => {
 const showPlayers = async () => {
     const players = await getPlayers();
 
-    // Loop through each player and append their information to the page
-    players.forEach((player) => {
-        document.getElementById("player-profiles-section").append(getPlayerSection(player));
-    });
+    // Log the fetched players to the console to verify
+    console.log(players); 
+
+    const profilesSection = document.getElementById("player-profiles");
+    
+    // Check if the element is found
+    if (!profilesSection) {
+        console.error("Element with ID 'player-profiles-section' not found.");
+        return;
+    }
+
+    if (players) {
+        players.forEach((player) => {
+            profilesSection.append(getPlayerSection(player));
+        });
+    }
 };
 
 // Function to generate a section for each player
@@ -55,15 +72,15 @@ const getPlayerSection = (player) => {
     section.append(h3);
 
     const ppgP = document.createElement("p");
-    ppgP.innerHTML = `Points Per Game: ${player.ppg}`;
+    ppgP.innerHTML = `Points Per Game (PPG): ${player.ppg}`;
     section.append(ppgP);
 
     const apgP = document.createElement("p");
-    apgP.innerHTML = `Assists Per Game: ${player.apg}`;
+    apgP.innerHTML = `Assists Per Game (APG): ${player.apg}`;
     section.append(apgP);
 
     const rpgP = document.createElement("p");
-    rpgP.innerHTML = `Rebounds Per Game: ${player.rpg}`;
+    rpgP.innerHTML = `Rebounds Per Game (RPG): ${player.rpg}`;
     section.append(rpgP);
 
     const fgP = document.createElement("p");
