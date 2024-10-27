@@ -157,7 +157,7 @@ document.getElementById("contact-form").onsubmit = async(e) => {
     if (httpResult && httpResult.status == 200) {
         result.innerHTML = "Email successfully sent";
     } else {
-        result.innerHTML = "Sorry, your email wasn't sent";
+        result.innerHTML = "Sorry, your email was not sent";
     }
 };
 
